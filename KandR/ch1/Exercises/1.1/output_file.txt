@@ -1,0 +1,9 @@
+Script started on Monday 09 January 2017 09:35:59 PM IST
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.1rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.1$ mygit [4P../openclose.sh [3Pcd chapter_2[7Pps -lecho $$[2Pps -lcd chapter_2./openclose.sh .[Kmygit [Kgcc -o hello_world hello_world.c 
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.1rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.1$ ./hello_world 
+Hello, World!
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.1rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.1$ rm hello_world
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.1rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.1$ ec[Kxit
+exit
+
+Script done on Monday 09 January 2017 09:36:32 PM IST
