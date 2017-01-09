@@ -1,0 +1,12 @@
+Script started on Monday 09 January 2017 09:50:00 PM IST
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.2rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.2$ gcc -o out escape_sequence.c 
+[01m[Kescape_sequence.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kescape_sequence.c:17:12:[m[K [01;35m[Kwarning: [m[Kunknown escape sequence: '\y'
+     printf("Hello, World\y");
+[01;32m[K            ^[m[K
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.2rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.2$ ./out 
+Hello, WorldyHello, WorldHello, World?]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.2rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.2$ exit
+exit
+
+
+Script done on Monday 09 January 2017 09:50:16 PM IST
