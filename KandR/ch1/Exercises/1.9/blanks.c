@@ -17,11 +17,8 @@ int main()
     lastc = NONBLANK;
     
     while((c = getchar()) != EOF) {
-        if(' ' != c)
+        if(' ' != c || ' ' != lastc)
             putchar(c);
-        else 
-            if(' ' != lastc)
-                putchar(c);
         lastc = c;
     }
     return EXIT_SUCCESS;
