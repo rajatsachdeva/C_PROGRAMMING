@@ -1,0 +1,10 @@
+Script started on Tuesday 17 January 2017 09:52:43 PM IST
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.9rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.9$ ./blank 
+hwl  ello       hwo  ow are you     ?
+hello how are you ?
+my name iis      rajat      !
+my name iis rajat !
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.9rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.9$ exit
+exit
+
+Script done on Tuesday 17 January 2017 09:53:06 PM IST
