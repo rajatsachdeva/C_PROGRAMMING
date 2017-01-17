@@ -1,0 +1,23 @@
+Script started on Tuesday 17 January 2017 09:00:00 PM IST
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.5rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.5$ ./output 
+
+fahr celsius
+300   148.9
+280   137.8
+260   126.7
+240   115.6
+220   104.4
+200    93.3
+180    82.2
+160    71.1
+140    60.0
+120    48.9
+100    37.8
+ 80    26.7
+ 60    15.6
+ 40     4.4
+ 20    -6.7
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.5rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.5$ exit
+exit
+
+Script done on Tuesday 17 January 2017 09:00:04 PM IST
