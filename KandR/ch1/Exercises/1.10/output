@@ -1,0 +1,10 @@
+Script started on Tuesday 17 January 2017 10:10:42 PM IST
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.10rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.10$ ./replace 
+hwll   ello 			my\\\fre ied nd
+hello \t\t\tmy\\\\\\friend
+bye	byet		
+bye\tbyet\t\t
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.10rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.10$ exit
+exit
+
+Script done on Tuesday 17 January 2017 10:11:08 PM IST

@@ -19,7 +19,7 @@ int main()
             printf("\\b");
         else if('\\' == c)
             printf("\\\\");
-        else if('\\' != c || '\t' == c|| '\b' == c)
+        else 
             putchar(c);
     }
     return EXIT_SUCCESS;
