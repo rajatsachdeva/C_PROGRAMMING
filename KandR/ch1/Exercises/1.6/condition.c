@@ -27,5 +27,9 @@ int main()
     other wise it's 0.
     
     Expression will be true only when there 
-    is some input from standard input 
+    is some input from standard input
+    
+    1. int is used here as the datatype should
+    be large enough to store the value EOF.
+    as EOF is an integer defined in stdio.h 
 */
