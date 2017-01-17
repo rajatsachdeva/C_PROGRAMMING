@@ -12,7 +12,7 @@ int main()
 {
     int c;              /* 1. why int is used here ? */
 
-    while(c = getchar() != EOF)
+    while((c = getchar()) != EOF)
         printf("%d\n", c);
     printf("%d ----- at EOF \n", c);
     
@@ -31,5 +31,8 @@ int main()
     
     1. int is used here as the datatype should
     be large enough to store the value EOF.
-    as EOF is an integer defined in stdio.h 
+    as EOF is an integer defined in stdio.h
+    
+    NOTE: Please use CTRL+D in linux
+          and CTRL+Z in windows to mark EOF 
 */

@@ -1,0 +1,12 @@
+Script started on Tuesday 17 January 2017 09:40:00 PM IST
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.8rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.8$ ./output 
+Hl wllo    ello how are you ?
+i   I am 	fine.
+what is  	is your 	name ?
+blanks = 10
+ tabs = 3
+ lines =3
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.8rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.8$ exit
+exit
+
+Script done on Tuesday 17 January 2017 09:40:34 PM IST
