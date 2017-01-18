@@ -1,0 +1,17 @@
+Script started on Wednesday 18 January 2017 11:55:37 PM IST
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/1.12rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/1.12$ ./output 
+
+hellow  how are you >?
+hello
+how
+are
+you
+>?
+i   Hii a    am fine
+Hi
+am
+fine
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/1.12rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/1.12$ exit
+exit
+
+Script done on Wednesday 18 January 2017 11:56:06 PM IST
