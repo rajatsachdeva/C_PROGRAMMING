@@ -1,0 +1,26 @@
+Script started on Wednesday 18 January 2017 10:23:19 PM IST
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.11rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.11$ ./output o[K
+   
+
+Newlines words characters
+       1     0          4
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.11rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.11$ ./output 
+ hello a how are yu ou ?
+
+I am fine
+
+Newlines words characters
+       3     7         32
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.11rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.11$ ./output 
+1
+
+Newlines words characters
+       1     1          2
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.11rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.11$ ./output 
+
+Newlines words characters
+       0     0          0
+]0;rajat@rajat-MXC061: ~/C_PROGRAMMING/KandR/ch1/Exercises/1.11rajat@rajat-MXC061:~/C_PROGRAMMING/KandR/ch1/Exercises/1.11$ exit
+exit
+
+Script done on Wednesday 18 January 2017 10:24:16 PM IST
