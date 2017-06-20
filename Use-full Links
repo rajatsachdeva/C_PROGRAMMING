@@ -1,0 +1,56 @@
+Use-full Links:
+1)  Basic Linux commands/tools related tutorials
+
+  a. http://www.ee.surrey.ac.uk/Teaching/Unix/
+
+  b. http://free-electrons.com/doc/unix_linux_introduction.pdf
+
+  c. http://cslibrary.stanford.edu/107/UnixProgrammingTools.pdf
+
+  [gcc, gdb, make]
+
+  d. http://www.linuxjournal.com/article/6463
+
+  e. http://www.ibm.com/developerworks/library/l-dynamic-libraries/
+
+  [d and e refers to linkers/loaders/static/dynamic libraries]
+
+  f. http://valgrind.org/docs/manual/mc-manual.html
+
+  [f refers to memory error detection using valgrind]
+
+2) C Programming related
+
+  a. http://cslibrary.stanford.edu/101/EssentialC.pdf
+
+  b. http://cslibrary.stanford.edu/106/
+
+  [ a, b refers to C and pointer related stuff]
+
+  c. http://cse.iitkgp.ac.in/~pallab/PDS-2011-SPRING/Lec-9.pdf
+
+  [c refers to file handling and command line arguments related stuff]
+
+  d. http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work
+
+  e. https://en.wikipedia.org/wiki/Variadic_function#Variadic_functions_in_C.2C_Objective-C.2C_C.2B.2B.2C_and_D
+
+  f. http://www.gnu.org/savannah-checkouts/gnu/libc/manual/html_node/Variadic-Functions.html
+
+  [e and f refers to writing functions with variable number of arguments]
+
+3) Data structures
+
+  a. http://cslibrary.stanford.edu/103/LinkedListBasics.pdf
+
+  b. http://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)HashTables.html
+
+  c. https://docs.python.org/2/tutorial/datastructures.html
+
+  [c basically refers to inbuilt data types supported by “python”. This gives a perspective that these are not available in C as inbuilt feature. So need for using a separate library is preferred when writing large programs in C]
+
+  d. http://stackoverflow.com/questions/668501/are-there-any-open-source-c-libraries-with-common-data-structures
+
+  e. http://www.ibm.com/developerworks/linux/tutorials/l-glib/
+
+  [e refers to Glib, which is an open source data structure library]
