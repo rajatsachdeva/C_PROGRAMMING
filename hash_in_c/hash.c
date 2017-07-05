@@ -2,6 +2,7 @@
  *
  *	Hash Function for strings 
  *
+ * Reference: http://research.cs.vt.edu/AVresearch/hashing/strings.php
  */
 
 #include<stdio.h>
