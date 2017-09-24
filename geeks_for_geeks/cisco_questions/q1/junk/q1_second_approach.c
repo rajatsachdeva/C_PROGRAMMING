@@ -38,9 +38,8 @@ int main()
 {
 	int tc  	= 0;	/* Number of Test cases */
 	int n   	= 0;	/* Number of elements in array */
-	int sum		= 0;	/* sum from size of array */
-	int sum_i	= 0;	/* sum from array entries */
-	int curr 	= 0; 	/* Current entry */
+	int curr	= 0;	/* current array value */
+	int prev	= 0;	/* previous array value */
 
 	printf("\nEnter number of Test cases: ");
 	scanf("%d", &tc);
@@ -49,18 +48,21 @@ int main()
 	{
 		printf("\nTC: %d\nEnter number of elements in array: ", tc-(tc-1));
 		scanf("%d", &n);
-		sum = (n * (n+1))/2;
-		sum_i = 0;
-
+		prev = 0;
 		/* As inputs contains one less entry than array size */
 		while(n > 1)
 		{
 			printf("\nenter value: ");
 			scanf("%d", &curr);
-			sum_i += curr;
+
+			if((curr - prev) == 2)
+			{
+				printf("\nMissing Number is %d", curr - 1);
+				break;
+			}
 			n--;
+			prev = curr;
 		}
-		printf("%d\n", sum - sum_i);
 		tc--;
 	}
 
