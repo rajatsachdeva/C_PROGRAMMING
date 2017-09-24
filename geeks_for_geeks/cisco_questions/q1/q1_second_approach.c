@@ -38,8 +38,9 @@ int main()
 {
 	int tc  	= 0;	/* Number of Test cases */
 	int n   	= 0;	/* Number of elements in array */
-	int sum		= 0;	/* current array value */
-	int sum_i	= 0;	/* previous array value */
+	int sum		= 0;	/* sum from size of array */
+	int sum_i	= 0;	/* sum from array entries */
+	int curr 	= 0; 	/* Current entry */
 
 	printf("\nEnter number of Test cases: ");
 	scanf("%d", &tc);
@@ -50,7 +51,7 @@ int main()
 		scanf("%d", &n);
 		sum = (n * (n+1))/2;
 		sum_i = 0;
-		prev = 0;
+
 		/* As inputs contains one less entry than array size */
 		while(n > 1)
 		{
