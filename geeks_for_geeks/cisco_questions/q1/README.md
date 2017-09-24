@@ -15,20 +15,27 @@ Print the missing number in array.
 Constraints:
 
 1 ≤ T ≤ 200
+
 1 ≤ N ≤ 1000
+
 1 ≤ C[i] ≤ 1000
 
 Example:
 
 Input
 2
+
 5
+
 1 2 3 5
+
 10
+
 1 2 3 4 5 6 7 8 10
 
 Output
 4
+
 9
 
 Reference: http://practice.geeksforgeeks.org/problems/missing-number-in-array
