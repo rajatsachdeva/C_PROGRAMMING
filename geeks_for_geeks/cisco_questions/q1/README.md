@@ -14,9 +14,9 @@ Print the missing number in array.
 
 Constraints:
 
-1 ≤ T ≤ 200
-1 ≤ N ≤ 1000
-1 ≤ C[i] ≤ 1000
+1 ≤ T ≤ 200  <br />
+1 ≤ N ≤ 1000  <br />
+1 ≤ C[i] ≤ 1000  <br />
 
 Example:
 
