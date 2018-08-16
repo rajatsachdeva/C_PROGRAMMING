@@ -2,8 +2,8 @@
 
 [C Memory Layout Explained](https://www.geeksforgeeks.org/memory-layout-of-c-program/)<br/>
 
-`
-[Thu Aug 16 22:25:46 Rajat]:memory_layout_in_c>vim memory_layout.c
+
+```[Thu Aug 16 22:25:46 Rajat]:memory_layout_in_c>vim memory_layout.c
 [Thu Aug 16 22:26:17 Rajat]:memory_layout_in_c>gcc memory_layout.c -o memory_layout
 [Thu Aug 16 22:26:42 Rajat]:memory_layout_in_c>ll
 total 24
@@ -37,4 +37,4 @@ __TEXT	__DATA	__OBJC	others	dec	hex
 __TEXT	__DATA	__OBJC	others	dec	hex
 4096	4096	0	4294971392	4294979584	100003000	
 [Thu Aug 16 22:31:14 Rajat]:memory_layout_in_c>
-`
+```
