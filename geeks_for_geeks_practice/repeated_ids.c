@@ -85,7 +85,7 @@ int main(){
         
         for(i = 1; i < size; i++) {
             scanf("%d", &elem);
-            if(-1 == check_if_present_in_array(arr, count + 1, elem)) {
+            if(-1 == check_if_present_in_array(arr, count, elem)) {
                 arr[count] = elem; 
                 count++;
             }
