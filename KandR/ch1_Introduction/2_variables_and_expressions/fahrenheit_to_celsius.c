@@ -2,7 +2,8 @@
 
 int main() {
 
-    int fahr, celsius;
+    //int fahr, celsius;
+    float fahr , celsius;
     int lower, upper, step;
 
     lower = 0;   /* lower limit of temperature table */
@@ -14,7 +15,7 @@ int main() {
     printf("Fahr\t%s\n", "Celsius");
     while(fahr <= upper) {
         celsius = ((5 * (fahr - 32)) / 9);  
-        printf("%4d\t%7d\n", fahr, celsius);
+        printf("%4.0f\t%7.1f\n", fahr, celsius);
         fahr += step;
     }
 
