@@ -14,11 +14,11 @@ int main() {
 
     printf("Fahr\t%s\n", "Celsius");
     while(fahr <= upper) {
-        celsius = ((5 * (fahr - 32)) / 9);  
+        //celsius = ((5 * (fahr - 32)) / 9);  
+        celsius = ((5 / 9.0) * (fahr - 32.0));  
         printf("%4.0f\t%7.1f\n", fahr, celsius);
         fahr += step;
     }
-
     return 0;
 }
 
