@@ -7,14 +7,12 @@
  */
 
 
-/* copy input to output */
+/* copy input to output, Second Version */
 int main() {
     int c; /* int is used in place of char */
 
-    c = getchar();
-    while(c != EOF) {
+    while((c = getchar()) != EOF) {
         putchar(c);
-        c = getchar();
     }
     return 0;
 }
