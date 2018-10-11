@@ -1,0 +1,157 @@
+
+When we compile the above mentioned code, an executable is created called as a.out (default name)
+Now this executable a.out is stored in the Text segment.
+
+In C memory map the next segment comes is Initailized Data Segment (That stores the global/static variables assigned with some value by the user). In this given program we don't have such variables, so we can display them here in the memory map
+
+After this comes the uninitialized Data Segment (That stores the global/static variables that are uninitialized). In this program we don't have such such variables, so we can display them here in the Memory Map.
+
+Now, all the variables that have local scope i.e. they are present in a block of code (in between {}) or inside functions are stored in Stack Segment or Stack. The variable being stored in stack are per function/block of code. Every function gets some amount of memory on the stack to store the local state (i.e. the variables)
+
+Taking firstly main() function, 
+int main ()
+{
+	struct person **list;
+	int i;
+	list = (struct person **) malloc (sizeof(struct person*) );
+	for (i=0; i<3; i++) {
+		list [i] = (struct person*) malloc (sizeof(struct person));
+	}
+
+	list[0]->name = "R2-D2";
+	list[0]->age = 609;
+	list[1]->name = "Optimus Prime";
+	list[1]->age = 2700;
+	list[2]->name = "Wall-E";
+	list[2]->age = 210;
+	
+	for (i=0; i < 3; i++){
+		print(list[i]);
+	}
+	for (i=0; i < 3; i++){
+		printf ("Heap Address %d : %u\n", (i+1), list[i]);
+	}
+	return 0;
+}
+
+Here local variables under main function are, 
+1. struck person **list or simply 'list'
+2. int i or simply 'i'
+
+Now moving second function print(),
+
+void print (struct person *p)
+{
+	printf ("Name=%s age=%d\n", p->name, p->age);
+}
+
+here we have following local variable,
+1. struct person *p or just 'p'
+
+Now coming back to next Memory segment which is Heap
+Heap basically where C program gets it dynamically allocated memory i.e. memory that is reserved during run-time of program.
+To identify heap we need to look into following code: 
+
+list = (struct person **) malloc (sizeof(struct person*));
+for (i=0; i<3; i++) {
+	list [i] = (struct person*) malloc (sizeof(struct person));
+}
+
+Here, 
+list = (struct person **) malloc (sizeof(struct person*));
+With this we are allocating memory to a pointer that will be pointing an array of pointers.
+
+Inside the loop we are allocating the memory to each pointer in array of pointers of type struct person.
+
+Now this covers all the segements of the memory map.
+
+Here is the final Memory Map: 
+
+On Stack we will have variables per function
+
+Stack: 
+
+main: 
+Name 		Contents
+list		Address for the start of array of pointers	
+i   		Garbage Value (as we didn't initialize it intiially)
+
+print: 
+Name  		Contents
+p  			Stores the address passed by the calling function for variable of type struct person
+
+Globals:
+
+Name 		Contents
+No globals present in this code
+
+
+For Heap , I have just added two printf to depict something, following is the code, 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct person {
+	char *name;
+	int age;
+};
+
+void print (struct person *p)
+{
+	printf ("Name=%s age=%d\n", p->name, p->age);
+}
+
+int main ()
+{
+	struct person **list;
+	int i;
+	list = (struct person **) malloc (sizeof(struct person*));
+	printf ("Heap Address list : %u\n", list); // Added 
+	for (i=0; i<3; i++) {
+		list [i] = (struct person*) malloc (sizeof(struct person));
+	}
+
+	printf ("Heap Address list value: %u\n", *list); // Added
+	list[0]->name = "R2-D2";
+	list[0]->age = 609;
+	list[1]->name = "Optimus Prime";
+	list[1]->age = 2700;
+	list[2]->name = "Wall-E";
+	list[2]->age = 210;
+	
+	for (i=0; i < 3; i++){
+		print(list[i]);
+	}
+	for (i=0; i < 3; i++){
+		printf ("Heap Address %d : %u\n", (i+1), list[i]);
+	}
+	return 0;
+}
+
+Output:
+
+./a.out 
+Heap Address list : 3569353520 <-- Address of list
+Heap Address list value: 3569353616 <-- value stored in list, which is the start of array i.e. list[0]
+Name=R2-D2 age=609
+Name=Optimus Prime age=2700
+Name=Wall-E age=210
+Heap Address 1 : 3569353616 <--- list[0]
+Heap Address 2 : 3569353632 <--- list[1]
+Heap Address 3 : 3569362640 <--- list[2]
+
+Heap: 
+Address 			Contents
+(Address of list)	(address of list[0] is stored inside)
+3569353520			3569353616	
+
+(list[0])
+3569353616			R2-D2, 609
+
+(list[1])
+3569353632			Optimus Prime, 2700
+
+(list[2])
+3569353640			Wall-E, 210
+
+Hope this Helps.
