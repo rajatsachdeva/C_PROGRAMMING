@@ -54,6 +54,5 @@ int main() {
 		}
 		printf("%s\n", long_name);
 	}
-
 	return 0;
 }
