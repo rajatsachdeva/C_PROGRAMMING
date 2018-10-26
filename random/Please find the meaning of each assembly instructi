@@ -1,0 +1,32 @@
+Please find the meaning of each assembly instruction as follows:
+Following code is used to subtract the contents of memory location 60 and 70 and then store the result in memory location 75
+
+LDAC 60 
+Loads the content from memory location 60 into CPU's Accumulator (AC)
+
+< OP CODE >	  < 16 Bit memory address >
+0000 0001     0000 0000 0000 0000 0000 0110 0000 0000
+
+MVAC
+Copies the content of AC (Accumulator) to Register R
+
+< OP CODE >	
+0000 0011
+
+LDAC 70
+Loads the content from memory location 70 into CPU's Accumulator (AC)
+
+< OP CODE >	  < 16 Bit memory address >
+0000 0001     0000 0000 0000 0000 0000 0111 0000 0000
+
+SUB
+Subtract the contents of AC (Accumulator) and R (R Register) i.e. AC = AC - R, if (AC - R = 0) then Z = 1, else Z = 0
+
+< OP CODE >
+0000 1001
+
+STAC 75
+Store the Contents of Accumulator (AC) in memory location 75
+
+< OP CODE >  < 16 Bit memory address >
+0000 0010	 0000 0000 0000 0000 0000 0111 0000 0101
