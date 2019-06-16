@@ -7,3 +7,7 @@ What is a Pointer ?
 What is an address ?
 
 `All the data stored in computer has some location i.e. address in the memory and that is called the memory address for any data present in the system.`
+
+What is Dereferencing/ Inderiction ?
+
+`Accessing the data present at the address stored in a pointer is known as dereferencing or indirection and same is achieved using indirection unary operation *`
