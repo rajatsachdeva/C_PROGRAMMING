@@ -24,11 +24,11 @@ int main (int argc, char **argv) {
      *     - same as pointer to pointer to character
      */
     ppc = words;        // initialize the pointer to a pointer to a character
-    for (i = 0; i < LENGTH; i++) {
+    for (i = 0; i < LENGTH; i++) {  // loop over each string
         ppc = words + i ;
         pc = *ppc;
-        while(*pc != '\0') {
-            printf("%c", *pc);
+        while(*pc != '\0') {        // process each character in a string
+            printf("%c", *pc);      // print out each character of the string individually
             pc += 1;
         }
         printf("\n");
