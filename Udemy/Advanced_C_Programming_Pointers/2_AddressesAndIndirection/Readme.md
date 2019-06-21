@@ -13,6 +13,6 @@ Name of the array is the address of the array`
 
 `Generic Pointers: Useful when we want to use same logic for various types of data, like sorting integers, chars , etc. using a single API. Generic pointer is written a pointer to void. When you use the generic pointer then use it alongwith proper type casting to let the compiler know what kind of data is being pointed by this generic pointer.`
 
-`Allocating Memory: we need dynamic memory allocation is powerful feature but dangerous too if we don't use it wisely as if used in wrong way can cause memory corruption/ crashes`
+`Allocating Memory: dynamic memory allocation is powerful feature but dangerous too if we don't use it wisely as if used in wrong way can cause memory corruption/ crashes. malloc allocates memory in the heap, local variables are saved in stack and have function scope only. Data present in heap will be stored globally and can be accessed from the program across , so that have program scope.`
 
 
