@@ -12,3 +12,7 @@ Name of the array is the address of the array`
 `Command line arguments in C are example for multiple indirection.`
 
 `Generic Pointers: Useful when we want to use same logic for various types of data, like sorting integers, chars , etc. using a single API. Generic pointer is written a pointer to void. When you use the generic pointer then use it alongwith proper type casting to let the compiler know what kind of data is being pointed by this generic pointer.`
+
+`Allocating Memory: we need dynamic memory allocation is powerful feature but dangerous too if we don't use it wisely as if used in wrong way can cause memory corruption/ crashes`
+
+
