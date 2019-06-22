@@ -15,4 +15,4 @@ Name of the array is the address of the array`
 
 `Allocating Memory: dynamic memory allocation is powerful feature but dangerous too if we don't use it wisely as if used in wrong way can cause memory corruption/ crashes. malloc allocates memory in the heap, local variables are saved in stack and have function scope only. Data present in heap will be stored globally and can be accessed from the program across , so that have program scope.`
 
-
+`Safe string functions: Some C compilers complain about using traditional string functions like strncpy as it is not safe, and instead asks the user to use the safer version of the function which is strncpy_s, we could avoid it by supressing the compilers errors, but it's recommended we use safe library where ever it is possible. In some instances we might have to stick to traditional APIs only as compiler doesn't yet support the safe string functions.`
