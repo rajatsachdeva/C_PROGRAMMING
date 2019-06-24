@@ -18,3 +18,5 @@ Name of the array is the address of the array`
 `Safe string functions: Some C compilers complain about using traditional string functions like strncpy as it is not safe, and instead asks the user to use the safer version of the function which is strncpy_s, we could avoid it by supressing the compilers errors, but it's recommended we use safe library where ever it is possible. In some instances we might have to stick to traditional APIs only as compiler doesn't yet support the safe string functions.`
 
 `malloc/ calloc/ realloc retrun generic pointer void * if succeeded otherwise NULL pointer in case of failure. NULL pointer is basically the address to which nothing points i.e. 0 , anything above 0 is a valid address.`
+
+`free: if we were to allocate the memory chunks, eventually we will run out of memory and crash. We need to give back the memory that is no more required. Memory not being freed will lead to memory leaks. It's good practice to deallocate the memory that is no longer required.`
