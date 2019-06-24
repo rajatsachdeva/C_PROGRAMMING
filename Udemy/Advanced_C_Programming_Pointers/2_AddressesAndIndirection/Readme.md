@@ -22,3 +22,5 @@ Name of the array is the address of the array`
 `free: if we were to allocate the memory chunks, eventually we will run out of memory and crash. We need to give back the memory that is no more required. Memory not being freed will lead to memory leaks. It's good practice to deallocate the memory that is no longer required. Never access memory after freeing it and never free any address that was never allocated, this will lead to serious issues.`
 
 `realloc: When we want to change the size of any allocated memory, we use realloc. It's way of allocating a new amount of memory referenced by an existing pointer`
+
+`Pointer Arithmetic: Adding 1 to pointer variable, moves the pointer to next element in an array. This is the feature of pointers which by adding 1 moves the pointer to 1 * sizeof(data_type) bytes, making it point to next element in the array`
