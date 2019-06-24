@@ -19,4 +19,6 @@ Name of the array is the address of the array`
 
 `malloc/ calloc/ realloc retrun generic pointer void * if succeeded otherwise NULL pointer in case of failure. NULL pointer is basically the address to which nothing points i.e. 0 , anything above 0 is a valid address.`
 
-`free: if we were to allocate the memory chunks, eventually we will run out of memory and crash. We need to give back the memory that is no more required. Memory not being freed will lead to memory leaks. It's good practice to deallocate the memory that is no longer required.`
+`free: if we were to allocate the memory chunks, eventually we will run out of memory and crash. We need to give back the memory that is no more required. Memory not being freed will lead to memory leaks. It's good practice to deallocate the memory that is no longer required. Never access memory after freeing it and never free any address that was never allocated, this will lead to serious issues.`
+
+`realloc: When we want to change the size of any allocated memory, we use realloc. It's way of allocating a new amount of memory referenced by an existing pointer`
