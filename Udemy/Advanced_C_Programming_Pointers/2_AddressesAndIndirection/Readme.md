@@ -28,6 +28,15 @@ Name of the array is the address of the array`
 `Size of datatype can vary on the basis of Computer/OS which is being used. So, our code should always be written in such a way that it is runnable on all platforms, i.e. platform independent.`
 
 ```C
+// Here size is 24 Bytes
+typedef struct mystruct_ {
+    int a;          // 4 bytes
+    int c;          // 4 bytes
+    double b;       // 8 bytes
+    long long int d;// 8 bytes
+} mystruct;
+
+// Here size is 32 Bytes
 typedef struct mystruct_ {
     int a;          // 4 bytes
     double b;       // 8 bytes
@@ -36,6 +45,4 @@ typedef struct mystruct_ {
 } mystruct;
 ```
 
-`
-On checking the sizeof struct mystruct it outputs 32 bytes, but in real there are only 24 bytes in the struct type. This is known as bit padding. Compiler does this, as it can allocate memory in same size of chunks. so here, we have max chunk-size of 8 and there are total 4 fields so 4 * 8 Bytes = 32 Bytes
-`
+`On checking the sizeof struct mystruct it outputs 32 bytes, but in real there are only 24 bytes in the struct type. This is known as bit padding. Compiler does this, as it can allocate memory in same size of chunks. so here, we have max chunk-size of 8 and there are total 4 fields so 4 * 8 Bytes = 32 Bytes`
