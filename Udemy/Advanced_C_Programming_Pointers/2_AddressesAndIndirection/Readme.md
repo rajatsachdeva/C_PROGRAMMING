@@ -24,3 +24,18 @@ Name of the array is the address of the array`
 `realloc: When we want to change the size of any allocated memory, we use realloc. It's way of allocating a new amount of memory referenced by an existing pointer`
 
 `Pointer Arithmetic: Adding 1 to pointer variable, moves the pointer to next element in an array. This is the feature of pointers which by adding 1 moves the pointer to 1 * sizeof(data_type) bytes, making it point to next element in the array`
+
+`Size of datatype can vary on the basis of Computer/OS which is being used. So, our code should always be written in such a way that it is runnable on all platforms, i.e. platform independent.`
+
+```C
+typedef struct mystruct_ {
+    int a;          // 4 bytes
+    double b;       // 8 bytes
+    int c;          // 4 bytes
+    long long int d;// 8 bytes
+} mystruct;
+```
+
+`
+On checking the sizeof struct mystruct it outputs 32 bytes, but in real there are only 24 bytes in the struct type. This is known as bit padding. Compiler does this, as it can allocate memory in same size of chunks. so here, we have max chunk-size of 8 and there are total 4 fields so 4 * 8 Bytes = 32 Bytes
+`
