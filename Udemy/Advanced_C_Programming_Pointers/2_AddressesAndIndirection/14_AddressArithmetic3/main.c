@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 typedef struct mystruct_ {
     int a;          // 4 bytes
     double b;       // 8 bytes
